@@ -9,8 +9,51 @@
     </head>
 
     <body>
-
-
-        <script src="main.js"></script>
+        <div id="container">
+            <div id="image-title-section">
+                <img src="https://images.unsplash.com/photo-1642359430898-dd7286907329?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" id="background-image">
+                <div id="title">
+                    <img id="logo" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png">
+                    <p>ODIN</p>
+                </div>
+                <p id="image-credit">Photo by <a href="https://unsplash.com/@jeansmt">Jean Soumet--Duterte</a> on <a href="https://unsplash.com/photos/HYmV_a2Kztw">Unsplash</a></p>
+            </div>
+            <div id="form-section">
+                <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign-up now to get started.</h3>
+                <h3>You know you want to.</h3>
+                <form>
+                    <legend><h3>Let's do this!</h3></legend>
+                    <div id="grid-container">
+                        <div>
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name">
+                        </div>
+                        <div>
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" class="focus" name="last-name">
+                        </div>
+                        <div>   
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div>
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="number" id="phone-number" name="phone-number">
+                        </div>
+                        <div>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" class="error" name="password">
+                            <p id="error-message">*password do not match</p>
+                        </div>    
+                        <div>
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-password" class="error">
+                        </div>
+                    </div>
+                </form>
+                <button id="create-account">CREATE ACCOUNT</button>
+                <p>Already have an account?<a href="https://eutrius.github.io/sign-up-form/">Log in</a></p>
+            </div>
+        </div>
     </body>
 </html>
